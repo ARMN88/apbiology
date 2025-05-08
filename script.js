@@ -54,6 +54,7 @@ function CycleUnits() {
     unitButton.innerHTML = "Jump To Unit " + (unit + 1);
 
     unitButton.classList.add(`bg-${colors[unit]}-500`);
+    unitButton.href = "#unit-" + (unit + 1);
     unitElement.classList.add(`text-${colors[unit]}-500`);
     CycleUnits();
   }, 50 * units[unit].length + 5000 + 50 * (units[unit].length - 1) + 300);
