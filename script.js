@@ -46,12 +46,12 @@ function CycleUnits() {
     }, 50 * units[unit].length + 5000 + 50 * (units[unit].length - i - 1));
   }
   setTimeout(() => {
+    unitButton.classList.remove(`bg-${colors[unit]}-500`);
+    unitElement.classList.remove(`text-${colors[unit]}-500`);
+
     unit++;
     unit %= units.length;
     unitButton.innerHTML = "Jump To Unit " + (unit + 1);
-
-    unitButton.classList.remove(`bg-${colors[unit]}-500`);
-    unitElement.classList.remove(`text-${colors[unit]}-500`);
 
     unitButton.classList.add(`bg-${colors[unit]}-500`);
     unitElement.classList.add(`text-${colors[unit]}-500`);
