@@ -1,1 +1,54 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AP Biology</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="w-full h-16 bg-white fixed">
+      <div class="flex items-center justify-between h-full w-48/50 float-right">
+        <h2 class="text-2xl text-black">AP Biology</h2>
+        <ul class="flex justify-between items-center w-1/3 h-full text-white">
+          <li
+            class="flex items-center w-full h-full bg-neutral-600 justify-center hover:text-black hover:bg-white transition-all"
+          >
+            Home
+          </li>
+          <li
+            class="flex items-center w-full h-full bg-neutral-700 justify-center hover:text-black hover:bg-white transition-all"
+          >
+            Units
+          </li>
+          <li
+            class="flex items-center w-full h-full bg-neutral-800 justify-center hover:text-black hover:bg-white transition-all"
+          >
+            About
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="h-screen bg-blue-100 flex justify-between">
+      <div class="flex items-center justify-between h-full w-46/50 m-auto">
+        <div class="flex flex-col w-3/5 items-start">
+          <h1 class="text-6xl font-semibold pb-4">
+            Learn <span id="unit" class="text-red-500 transition-all"></span>
+          </h1>
+          <div>
+            <button
+              class="px-4 py-1.5 rounded-md bg-red-500 text-white transition-all"
+              id="unitBtn"
+            >
+              Jump To Unit 1
+            </button>
+          </div>
+        </div>
+        <div class="h-120 w-120 bg-blue-300 m-auto rounded-full">
+          <img src="scope.png" class="w-full" />
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
