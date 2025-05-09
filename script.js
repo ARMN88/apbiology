@@ -19,7 +19,7 @@ const colors = [
   "fuchsia",
   "teal",
   "violet",
-  "yellow",
+  "orange",
   "sky",
   "pink",
 ];
